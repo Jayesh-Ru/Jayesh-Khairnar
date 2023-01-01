@@ -537,6 +537,8 @@ body.projects_B-on .projects_B-section {
     letter-spacing: 1px;
     color: #544170;
 }
+
+
 .proj_desc{
     display: flex;
     flex-direction: column;
@@ -647,3 +649,6 @@ button{
     .button-os a:hover{
         letter-spacing: 5px;
     }
+
+    /**/
+  
