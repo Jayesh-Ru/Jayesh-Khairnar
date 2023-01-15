@@ -75,6 +75,5 @@ document.getElementsByTagName("body")[0].addEventListener("mousemove", function(
     $(".nature-close").on('click', function () {
         $("body").removeClass("nature-on");
     });
-
     
 })(jQuery);
