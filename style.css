@@ -649,6 +649,177 @@ button{
     .button-os a:hover{
         letter-spacing: 5px;
     }
-
-    /**/
+    
+    /*Top Animation*/
+    .ghost{
+        z-index: 100;
+    }
+    .ghost {
+        width: 150px;
+        height: 180px;
+            margin: auto;
+        background-color: rgb(220, 181, 255);
+        border-top-left-radius: 110px;
+        border-top-right-radius: 110px;
+        border-bottom: 0;
+            position: relative;
+            left:250px;
+            /* top:-120px; */
+        margin-top: 15%;
+        -webkit-animation: float 40s linear infinite;
+                animation: float 40s linear infinite;
+        border-color:rgb(228, 145, 231);
+        box-shadow: 0 0 100px rgb(228, 145, 231);
+    }
+    
+    @-webkit-keyframes float {
+      0% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        opacity: 1;
+      }
+        50% {
+        -webkit-transform: translateY(300px);
+                transform: translateY(300px);
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+    @keyframes float {
+      0% {
+        -webkit-transform: translate(0px,0);
+                transform: translate(0px,0);
+        opacity: 1;
+      }
+      20% {
+        -webkit-transform: translate(280px,280px);
+                transform: translate(280px,280px);
+        opacity: 1;
+      }
+      25% {
+        -webkit-transform: translate(300px,300px);
+                transform: translate(300px,300px);
+        opacity: .71;
+      } 
+      40% {
+        -webkit-transform: translate(-290px,-270px);
+        transform: translate(-290px,-270px);
+        opacity: .1;
+      }
+      60% {
+        -webkit-transform: translate(-670px,240px);
+                transform: translate(-670px,240px);
+        opacity: 1;
+      }
+      
+      65% {
+        -webkit-transform: translate(-790px,220px);
+                transform: translate(-790px,220px);
+        opacity: .21;
+      }
+      75% {
+        -webkit-transform: translate(150px,-150px);
+                transform: translate(150px,-150px);
+        opacity: 1;
+      }
+    70% {
+        -webkit-transform: translate(250px,-350px);
+                transform: translate(250px,-350px);
+        opacity: .81;
+      }
+      
+      90% {
+        -webkit-transform: translate(-450px,200px);
+        transform: translate(-450px,200px);
+        opacity: .51;
+      }
+      100%{
+        -webkit-transform: translate(0px,0);
+                transform: translate(0px,0);
+        opacity: 1;
+      }
+    }
+    
+    
+    .eye{
+        width: 30px;
+        height: 30px;
+        background-color: #2A3A4A;
+        border-radius: 50%;
+        position: absolute;
+    }
+    
+    .eye.left{
+        top: 50px;
+        left: 30px;
+    }
+    
+    .eye.right{
+        top: 50px;
+        right: 30px;
+    }
+    
+    .mounth{
+        width: 40px;
+        height: 20px;
+        background-color: #2A3A4A;
+        position: absolute;
+      border-bottom-left-radius: 110px;
+      border-bottom-right-radius: 110px;
+      border-top: 0;
+        bottom: 70px;
+        left: 55px;
+    }
+    
+    .arm{
+        width: 30px;
+        height: 30px;
+        background-color: rgb(220, 181, 255);
+        position: absolute;
+      border-top: 0;
+        bottom: 70px;
+    }
+    
+    .arm.left{
+      border-top-left-radius: 110px;
+      border-bottom-left-radius: 110px;
+        left: -20px;
+    }
+    
+    .arm.right{
+      border-top-right-radius: 110px;
+      border-bottom-right-radius: 110px;
+        right: -20px;
+    }
+    
+    .bottom{
+        width: 37.5px;
+        height: 30px;
+        background-color: rgb(220, 181, 255);
+        position: absolute;
+      border-top: 0;
+      border-bottom-left-radius: 110px;
+      border-bottom-right-radius: 110px;
+        bottom: -15px;
+    }
+    
+    .bottom.one{
+        left: 0px;
+    }
+    
+    .bottom.two{
+        left: 37.5px;
+    }
+    
+    .bottom.three{
+        left: 75px;
+    }
+    
+    .bottom.four{
+        left: 112.5px;
+    }
   
