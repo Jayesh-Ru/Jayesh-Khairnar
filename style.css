@@ -505,6 +505,14 @@ body.projects_B-on .projects_B-section {
     justify-content: space-around;
 }
 
+.flexbox img{
+    border-color: transparent;
+    border-width: 10px;
+    border-style: solid;
+    box-shadow: 3px 3px 10px 5px white;
+
+}
+
 .intro-section video,
 .projects_A-section video,
 .projects_B-section video {
@@ -553,17 +561,15 @@ a:hover{
     color:blue;
 }
 
-.projects_B-section .description{
-    width: 45%;
-}
-#vid,#vid2,#vid3,#vid4,#vid5,#vid6,#vid7,#vid8,#vid9{
+/* #vid,#vid2,#vid3,#vid4,#vid5,#vid6,#vid7,#vid8,#vid9{
     width: 80%;
 }
 #vid video,#vid2 video,#vid3 video,#vid4 video,#vid5 video,#vid6 video,#vid7 video,#vid8 video,#vid9 video{
 margin-top:0px;
-}
+} */
 /**/
-.projects_B-section .description{
+.projects_B-section .description,.projects_A-section .description{
+    width: 90%;
     display: flex;
     justify-content: space-evenly
 }
@@ -859,4 +865,121 @@ button{
     .bottom.four{
         left: 112.5px;
     }
-  
+   
+    /*styling the toggle switcher*/
+    .theme-switch{
+        position: absolute;
+        top: 22px;
+        left:90%;
+       z-index: 2000;
+    }    
+    .checkbox{
+            opacity:0 ;
+            position: absolute;
+        }
+        .label{
+            width:35px;
+            height: 20px;
+            background-color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 30px;
+            padding: 6px;
+            position: relative;
+            cursor: pointer;
+        }
+        .sun{
+            color:#ff4757;
+        }
+        .moon{
+            color:#ffa502;
+        }
+        .switcher{
+            width: 20px;
+            height: 20px;
+            border-radius:50% ;
+            background-color:white;
+            position:absolute ;
+            top:5px;
+            left:2px;
+        }
+        .checkbox:checked + .label .switcher {
+            transform: translatex(24px);
+          }
+
+        /* styles for dark theme */
+        body.dark .projects_A-section,
+        body.dark .projects_B-section,
+        body.dark .intro-section{
+           
+            /* filter: blur(8px); */
+            background-image: url('images/ryan-spencer-Um9AkOiIDcU-unsplash.jpg'); 
+        }
+
+        body.dark .projects_A-section h3,
+        body.dark .projects_B-section h3{
+            color:#ededf1;
+        }
+       
+        body.dark .flexbox img{
+            box-shadow: 3px 3px 10px 2px rgb(171, 176, 216);
+        }
+        
+        body.dark .projects_A-section p span,
+        body.dark .projects_B-section p span,
+        body.dark .intro-section p span{
+            color:#ededf1;
+        }
+        body.dark .flexbox a{
+            color:white;
+        }
+        body.dark .flexbox a:hover{
+            color:blue;
+        }
+        body.dark .flexbox .description{
+            background-color: rgba(24, 21, 21, 0.753);
+            box-shadow: 3px 3px 10px 5px rgb(41, 55, 184);
+        }
+        body.dark .flexbox .subheading{
+            color: white;
+        }
+        body.dark .flexbox ul{
+            color:white;
+        }
+        body.dark .switcher{
+            background-color: #000;
+        }
+        
+        body.dark .label{
+            background-color: white;
+        }
+        body.dark .button-os{
+            background-color: rgb(71, 66, 66);
+        }
+                body.dark .button-os a{
+            background-color: rgb(71, 66, 66);
+        }
+        
+        body.dark .hero-section{
+            background-image: url('images/ryan-spencer-Um9AkOiIDcU-unsplash.jpg');
+        }
+        body.dark .hero-section h1{
+         color: rgb(15, 2, 2);
+         text-shadow: 15px 15px 15px rgb(84, 97, 221);
+        }
+        body.dark .hero-section .dancing{
+            padding-left: 55px;
+            font-size: 45px;
+            color:#060211;
+            text-shadow: 5px 5px 15px rgb(111, 120, 202);
+        }
+         body.dark .hero-section p{
+            color:rgb(255, 255, 255);
+             text-shadow: 5px 5px 15px rgb(9, 34, 252);
+        }
+        body.dark .hero-section .contact-text{
+            color: white;
+            text-shadow: 5px 5px 15px rgb(9, 34, 252);
+        }
+        
