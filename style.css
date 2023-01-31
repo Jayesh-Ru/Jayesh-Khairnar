@@ -457,19 +457,7 @@ body.projects_B-on .projects_B-section {
     -webkit-transition-delay: 400ms;
     transition-delay: 400ms;
 }
-/*
-.travel-section img,
-.wildlife-section img,
-.nature-section img {
-    margin-top: 30px;
-    width: 40%;
-    padding: 20px;
-    height: auto;
-    display: block;
-    border-radius: 4px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.8);
-}
-*/
+
 .intro-section h3,
 .projects_A-section h3,
 .projects_B-section h3 {
@@ -513,19 +501,6 @@ body.projects_B-on .projects_B-section {
 
 }
 
-.intro-section video,
-.projects_A-section video,
-.projects_B-section video {
-    background-color: rgba(229, 148, 231,0.4);
-    margin-top: 30px;
-    width: 60%;
-    padding: 10px;
-    height: auto;
-    
-    display: block;
-    border-radius: 4px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.8);
-}
 .description{
     background-color: rgba(216, 154, 218, 0.233);
     margin-top: 30px;
@@ -1142,25 +1117,32 @@ button{
     padding-left: 40px;
 }
 /* intro-section */
-/* .intro-section img{
-    width: 270px;
+
+.intro-section img{
+    float: none;
+    width: calc(85%);
     margin-top: -25px;
     margin-bottom: 25px;
     padding-bottom: 5px;
-    padding-right: 5px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
+    align-content: center;
+    /* flex-wrap: nowrap; */
 }
 .intro-section .heading{
+    text-align: center;
     margin-top: -20px;
-    padding-left: 15%;
+    padding-left: 0%;
 }
 #para1{
+    clear: both;
     text-align: justify;
     font-size: 16px;
     padding-right: 10px;
 }
 #para1 span{
     font-size: 12px;
-} */
+}
 .button-os{
     transition: none;
 }
@@ -1171,10 +1153,123 @@ button{
 .button-os a{
     transition: none;
 }
+
+/*Making the projects_A and projects_B seciton responsive  */
+
+.projects_A-section h3,
+.projects_B-section h3 {
+    font-size: 25px;
+
+}
+.projects_A-section p,
+.projects_B-section p{
+    font-size:10px;
+}
+
+.projects_A-section p span,
+.projects_B-section p span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.projects_A-section .flexbox img,
+.projects_B-section .flexbox img{
+    width:270px;
+}
+
+.projects_B-section .subheading,
+.projects_A-section .subheading{
+    font-size: 10px;
+}
+
+.projects_A-section .flexbox,
+.projects_B-section .flexbox{
+    width: 100%;
+}
+.projects_B-section .description,
+.projects_A-section .description{
+    margin-right:5px ;
+    height: 164.75px;
+}
+.projects_B-section .description h3,
+.projects_A-section .description h3{
+    font-size: 15px;
+    margin: .5px;
+}
+.projects_B-section .description li,
+.projects_A-section .description li{  
+    font-size: 12px;
+}
+
+/* img div in projects_B section */
+#imgdiv,#imgdiv2{
+    display: none !important;
+}
+}
+@media screen and (width<=425px){
+    .projects_A-section .flexbox,
+.projects_B-section .flexbox{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.projects_A-section img,
+.projects_B-section img{
+    width: 200px;
+    
+}
+.projects_B-section .description,
+.projects_A-section .description{
+    width: 100%;
+    padding: 5px;
+   /* width: 100%; */
+    height: 170px;
+}
+.projects_B-section .subheading,
+.projects_A-section .subheading{
+   display: none;
+}
+.projects_B-section .description li,
+.projects_A-section .description li{  
+    font-size: 12px;
+}
+.projects_B-section .description h3,
+.projects_A-section .description h3{
+    font-size: 12px;
+    margin: .5px;
+}
+
 }
 @media screen and (width<=547px){
   .button-os{  
     top:-5rem;
     left:-0rem;
   }
+}
+@media screen and (width<=375px){
+    .theme-switch{
+        left:75.5%;
+    }
+.projects_B-section .description,
+.projects_A-section .description{
+    width: 100%;
+    padding: 5px;
+    height: 127px;
+}
+.projects_B-section .description img,
+.projects_A-section .description img{
+    width: 186px;
+}
+}
+@media screen and (width<=320px){
+    .projects_B-section .description,
+.projects_A-section .description{
+    height: 111px;
+}
+    .projects_B-section .description img,
+    .projects_A-section .description img{
+        width: 166px;
+    }
+    
 }
