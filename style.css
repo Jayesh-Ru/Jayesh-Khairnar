@@ -370,8 +370,8 @@ body.contact-on .contact-section {
 }
 .contact-section a{
     position: relative;
-    left:400px;
-    top:220px;
+    left:800px;
+    top:120px;
     margin: 0 auto;
     font-size: 32px;
     font-weight: 900;
@@ -1206,12 +1206,13 @@ button{
 
 .projects_A-section p span,
 .projects_B-section p span{
+    margin-left: 5%;
     font-size: 20px;
     font-weight: 500;
 }
 .projects_A-section .flexbox img,
 .projects_B-section .flexbox img{
-    width:250px;
+    width:200px;
 }
 
 .projects_B-section .subheading,
@@ -1222,21 +1223,21 @@ button{
 .projects_B-section .description,
 .projects_A-section .description{
     margin-right:5px ;
-    height: 164.75px;
+    height: 130px;
 }
 .projects_B-section .description h3,
 .projects_A-section .description h3{
-    font-size: 12px;
+    font-size: 10px;
     margin: 5px 0px;
 }
 .projects_B-section .description h5,
 .projects_A-section .description h5{
-    
-    margin: 5.5px;
+    font-size: 8px;
+    margin: 5.5px 0;
 }
 .projects_B-section .description li,
 .projects_A-section .description li{  
-    font-size: 10px;
+    font-size: 8px;
 }
 
 /* img div in projects_B section */
@@ -1244,71 +1245,38 @@ button{
     display: none !important;
 }
 }
-@media screen and (width<=425px){
-    .projects_A-section .flexbox,
-.projects_B-section .flexbox{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.projects_A-section img,
-.projects_B-section img{
-    width: 200px;
-    
-}
-.projects_B-section .description,
-.projects_A-section .description{
-    width: 100%;
-    padding: 5px;
-   /* width: 100%; */
-    height: 170px;
-}
-.projects_B-section .subheading,
-.projects_A-section .subheading{
-   display: none;
-}
-.projects_B-section .description li,
-.projects_A-section .description li{  
-    font-size: 12px;
-}
-.projects_B-section .description h3,
-.projects_A-section .description h3{
-    font-size: 12px;
-    margin: .5px;
-}
 
-}
-@media screen and (width<=547px){
-  .button-os{  
-    top:-5rem;
-    left:-0rem;
-  }
-}
+
 @media screen and (width<=375px){
     .theme-switch{
         left:75.5%;
     }
 .projects_B-section .description,
 .projects_A-section .description{
-    width: 100%;
     padding: 5px;
-    height: 127px;
 }
-.projects_B-section .description img,
-.projects_A-section .description img{
-    width: 186px;
+/*  */
+.contact-section a{
+    left:2.5rem;
+    top:130px;
+    font-size:15px;
+}
+.contact-section .social a{
+    padding-left: 20px;
 }
 }
+
+
 @media screen and (width<=320px){
-    .projects_B-section .description,
-.projects_A-section .description{
-    height: 111px;
-}
+
     .projects_B-section .description img,
     .projects_A-section .description img{
-        width: 166px;
+        width: 176px;
+    }
+    .contact-section a{
+        left:0.5rem;
+        top:130px;
+        font-size:15px;
     }
     
 }
