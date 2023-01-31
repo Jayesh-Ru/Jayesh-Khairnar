@@ -956,7 +956,7 @@ button{
             text-shadow: 5px 5px .938rem rgb(9, 34, 252);
         }
 
-@media screen and (width<= 600px){
+@media screen and (width<= 450px){
     .ghost{
         width: 32px;
         height: 40px;
@@ -1192,14 +1192,15 @@ button{
 }
 
 /*Making the projects_A and projects_B seciton responsive  */
-
-.projects_A-section h3,
-.projects_B-section h3 {
-    font-size: 25px;
-
+.projects_A-section .flexbox,
+.projects_B-section .flexbox{
+    width:100%;
 }
+
 .projects_A-section p,
 .projects_B-section p{
+    padding: 0;
+    margin: 0;
     font-size:10px;
 }
 
@@ -1210,7 +1211,7 @@ button{
 }
 .projects_A-section .flexbox img,
 .projects_B-section .flexbox img{
-    width:270px;
+    width:250px;
 }
 
 .projects_B-section .subheading,
@@ -1218,10 +1219,6 @@ button{
     font-size: 10px;
 }
 
-.projects_A-section .flexbox,
-.projects_B-section .flexbox{
-    width: 100%;
-}
 .projects_B-section .description,
 .projects_A-section .description{
     margin-right:5px ;
@@ -1229,12 +1226,17 @@ button{
 }
 .projects_B-section .description h3,
 .projects_A-section .description h3{
-    font-size: 15px;
-    margin: .5px;
+    font-size: 12px;
+    margin: 5px 0px;
+}
+.projects_B-section .description h5,
+.projects_A-section .description h5{
+    
+    margin: 5.5px;
 }
 .projects_B-section .description li,
 .projects_A-section .description li{  
-    font-size: 12px;
+    font-size: 10px;
 }
 
 /* img div in projects_B section */
